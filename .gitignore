@@ -1,3 +1,22 @@
-venv
-*.egg-info
-build
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# PySpark and logs
+.metastore_db/
+derby.log
+
+# IDEs
+.idea/
+.vscode/
+
+# Environment
+.env
+.venv/
+venv/
