@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geometry-lib"
+version = "0.1.0"
+description = "Library for calculating the areas of geometric shapes"
+authors = [
+    { name="Artem Pervovsky", email="artyomperv@mail.ru" }
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+geometry-cli = "geometry.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
